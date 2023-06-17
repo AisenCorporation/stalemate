@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171717;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-title {
+  font-size: 24px;
+  color: #FFFF00;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.cardmain {
+  background-color: #000000;
+  color: #FFFF00;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero-section {
+  position: relative;
+  color: #FFFF00;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/stalemate.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px) brightness(0.8) saturate(150%);
+  z-index: -1;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: #FFFF00;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.features-section {
+  background-color: #000000;
+  color: #FFFF00;
+  padding: 80px 0;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  border: 2px solid #4e4e4e;
+  flex-basis: calc(50% - 20px);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.feature-icon {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 3;
+  top: -5px;
+}
+
+.feature-description {
+  font-size: 16px;
+  position: relative;
+  z-index: 3;
+  top: -5px;
+}
+
+.products-section {
+  background-color: #000000;
+  color: #FFFF00;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  border: 2px solid #4e4e4e;
+  flex-basis: calc(33.33% - 20px);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 3;
+  top: -5px;
+}
+
+.product-description {
+  font-size: 16px;
+  position: relative;
+  z-index: 3;
+  top: -5px;
+}
+
+.screenshots-section {
+  background-color: #000000;
+  color: #FFFF00;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.screenshots-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.screenshots-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.screenshot-item {
+  margin: 10px;
+}
+
+.screenshot-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.roadmap-section {
+  background-color: #000000;
+  color: #FFFF00;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.roadmap-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.roadmap-description {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.roadmap-button {
+  display: inline-block;
+  background-color: #FFFF00;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.cta-section {
+  position: relative;
+  padding: 80px 0;
+  color: #FFFF00;
+  text-align: center;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(10px) brightness(0.8) saturate(150%);
+  z-index: -1;
+}
+
+.cta-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta-description {
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #FFFF00;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171717;
+  padding: 20px;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-menu {
+  display: flex;
+  list-style: none;
+}
+
+.footer-item {
+  margin-right: 20px;
+}
+
+.footer-info{
+    text-decoration: none;
+    color: #FFFF00;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #FFFF00;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 10px;
+  color: #FFFF00;
+  text-decoration: none;
+}
+
+.developer-card {
+  background-color: #171717;
+  color: #FFFF00;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.developer-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.developers-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #FFFF00;
+}
+
+.developer-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #FFFF00;
+}
+
+.developer-role {
+  font-size: 16px;
+  color: #FFFF00;
+}
+
+.store-section {
+    background-color: #000;
+    color: #FFFF00;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .store-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .store-background-image {
+    background-image: url(images/store.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px) brightness(0.8) saturate(150%);
+  }
+  
+  .store-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .store-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .store-description {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .special-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .special-card::after {
+    content: "-70%";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 30px;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .special-card::before {
+    content: "+200 бонус";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #FFFF00;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .store-discount {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+  }
+  
+  .store-button {
+    width: 330px;
+    height: 36px;
+    display: inline-block;
+    background-color: #FFFF00;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 17px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .store-button:hover {
+    background-color: #FFD700;
+  }
+  
+  .product-card {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-image {
+    position: relative;
+    z-index: 1;
+  }
